@@ -1,5 +1,5 @@
 <template>
-  <div class="edit">
+  <div class="support">
     <h1>{{ info }}</h1>
     <h2>Essential Links</h2>
     
@@ -8,10 +8,10 @@
 
 <script>
 export default {
-  name: 'edit',
+  name: 'support',
   data () {
     return {
-      info: 'edit the project!'
+      info: 'support me'
     }
   }
 }
