@@ -44,7 +44,7 @@ window.onload = function(){
   setTimeout(function(){
     $(".cover").hide()
     $(".author").addClass("authorAnimation")
-  },5000)
+  },2000)
 }
 
 </script>
@@ -112,7 +112,7 @@ window.onload = function(){
 .content{
   width: 800px;
   margin-left: 800px;
-  transition:  5s margin-left linear;
+  transition:  2s margin-left linear;
 }
 .show{
   margin-left: 0px;
