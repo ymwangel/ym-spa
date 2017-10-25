@@ -18,7 +18,24 @@
 
 </template>
 
-<style>
+<script>
+
+
+function data(){
+  return {
+    info: '文章列表'
+  }
+}
+
+export default {
+  name: 'home',
+  data
+}
+
+
+</script>
+
+<style scoped>
   a{
     text-decoration: none;
   }
@@ -63,22 +80,7 @@
     margin: 0 120px;
   }
 </style>
-<script>
 
-
-function data(){
-  return {
-    info: '文章列表'
-  }
-}
-
-export default {
-  name: 'home',
-  data
-}
-
-
-</script>
 
 
 
