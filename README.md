@@ -28,3 +28,10 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+```
+
+"dev": "webpack-dev-server --inline --hot",
+"build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+"watch": "webpack --progress --color --watch",
+"server": "supervisor ./server/www"

@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+  <div id="aa">
+    <slot></slot>
     <div class="cover">
       <div class="welcome">
         <div class="content">Welcome to ymwangel's website!</div>
@@ -12,7 +13,7 @@
       <div class="author fl">ymwangel</div>
       <ul class="nav fr">
         <li class="nav-item">
-          <router-link class="mato" to="/home">首页</router-link>
+          <router-link class="mato" to="/home">首页{{count}}</router-link>
         </li>
         <li class="nav-item">
           <router-link class="mato" to="/edit">编辑</router-link>
@@ -24,7 +25,8 @@
           <router-link class="mato" to="/support">赞我吧</router-link>
         </li>
       </ul>
-    </div>   
+    </div>
+
     <div class="view">
       <router-view>
       
@@ -36,8 +38,17 @@
     
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  name: 'app'
+  name: 'app',
+  data: function() {
+    return {}
+  },
+  computed: {
+    count () {
+      return this.$store.state.count
+    }
+  }
 }
 window.onload = function(){
   $('.content').addClass("show")

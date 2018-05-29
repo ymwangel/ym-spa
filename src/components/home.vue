@@ -7,6 +7,7 @@
         <li class="list-item"><router-link to="/home/articleTwo">article 2</router-link></li>
         <li class="list-item"><router-link to="/home/articleThree">article 3</router-link></li>
         <li class="list-item"><router-link to="/home/articleFour">article 4</router-link></li>
+        <li class="list-item"><router-link to="/edit">aa</router-link></li>
       </ul>
     </div>
       
